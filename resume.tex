@@ -1,0 +1,112 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Formatting 
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{0.5ex}{0.5ex}
+\definecolor{linkcolor}{RGB}{0, 51, 102}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,      
+    urlcolor=linkcolor,
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% HEADER
+\begin{center}
+    {\huge \textbf{Sagnik Datta Bhowmick}} \\ \vspace{2pt}
+    +91 7003643079 $|$ \href{mailto:dbsagnik034@gmail.com}{dbsagnik034@gmail.com} $|$ \href{https://github.com/Sagn-2007}{github.com/Sagn-2007} $|$ \href{https://www.linkedin.com/in/sagnik-datta-bhowmick}{linkedin.com/in/sagnik-datta-bhowmick}
+\end{center}
+
+\vspace{-10pt}
+
+% EDUCATION
+\section{Education}
+\textbf{Institute of Engineering and Management (IEM), Kolkata} \hfill 2025 -- 2029 \\
+Bachelor of Technology in Computer Science and Engineering \hfill \textit{CGPA: 9.31} \\[2pt]
+\textbf{Indian Institute of Technology Madras (IIT Madras)} \hfill 2026 -- Present \\
+Bachelor of Science in Data Science and Applications (Foundation Level) \hfill \textit{CGPA: 10.00/10.00}
+
+% RESEARCH EXPERIENCE
+\section{Research Experience}
+\textbf{Centre of Excellence for Data Science (CEDS), IEM Kolkata} \hfill 2026 -- Present \\
+\textit{Student Member}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Contributing to faculty-mentored research in computer vision and deep learning, focusing on semantic perception systems for autonomous vehicle applications.
+    \item Designing and executing experiments in PyTorch to benchmark semantic segmentation architectures, analyzing the performance tradeoffs between classical Fully Convolutional Networks and modern transformer models.
+\end{itemize}
+
+% TECHNICAL PROJECTS
+\section{Selected Technical Projects}
+
+\textbf{Sequential Reciprocal Matching under Extreme Delay} $|$ \textit{Python, Operations Research, Decision Theory}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Formulated a resource-constrained sequential matching policy utilizing Partially Observable Markov Decision Processes (POMDP) and Value of Information (VoI) heuristics.
+    \item Achieved a 51.9\% improvement in Mutual Second-Meeting Intention (MSMI) from 0.258 to 0.392 over the greedy baseline across a rigorous 10-seed simulated evaluation covering six environmental scenarios.
+\end{itemize}
+
+\textbf{Road Segmentation for Autonomous Driving} $|$ \textit{PyTorch, Computer Vision, Hugging Face}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Systematically evaluated deep learning architectures for binary semantic road segmentation, progressing from a from-scratch FCN-ResNet50 (87.11\% validation IoU) to fine-tuned transformer backbones.
+    \item Adapted an ADE20K-pretrained SegFormer-B2 model, applying layer-wise learning rates to backbone stages 2 and 3, achieving a validation IoU of 92.95\% and a Dice Score of 96.34\%.
+\end{itemize}
+
+\textbf{CiteCheck: AI Citation Verification Framework} $|$ \textit{FastAPI, NLP, Python, React}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Engineered an applied AI backend utilizing Gemini to parse unstructured document bibliographies and deterministically verify claims against Crossref, OpenAlex, and Semantic Scholar APIs.
+    \item Validated extraction accuracy and mitigated hallucination rates using a custom evaluation framework comprising 145 deterministic boundary-tested cases.
+\end{itemize}
+
+\textbf{TinyURL \& DSA Laboratory} $|$ \textit{Cloudflare Workers, D1/SQLite, React, C11}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Built an edge-native URL shortener featuring dual-tier KV caching, Base62 encoding, sliding-window rate limiting, alongside an interactive React Hash Table visualization lab backed by a memory-safe C11 reference implementation.
+\end{itemize}
+
+\textbf{Ingredient Label Checker} $|$ \textit{Python, Playwright, OpenRouter, NVIDIA Nemotron}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Developed a browser extension for complex dietary profiling (Vegan, Jain, allergens) combining dynamic Playwright webpage extraction with deterministic rules and LLM-based fallback classification.
+\end{itemize}
+
+\textbf{RentX: Peer-to-Peer Rental Marketplace} $|$ \textit{Next.js, TypeScript, PostgreSQL, Prisma, Socket.IO}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Architected a hyperlocal rental platform featuring a digital Item Passport, multidimensional reputation metrics, real-time messaging, and an auditable off-chain state machine for deposit lifecycles.
+\end{itemize}
+
+\textbf{AI-Based Spinal Posture Detection} $|$ \textit{OpenCV, Scikit-learn, MediaPipe}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item Built a real-time computer vision pipeline to extract frontal and lateral body landmarks, calculating critical geometric postural angles for a serialized Scikit-learn Random Forest classifier.
+\end{itemize}
+
+% TECHNICAL SKILLS
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt]
+    \item \textbf{Languages:} Python, C, C++, TypeScript, JavaScript, SQL
+    \item \textbf{AI/ML \& Vision:} PyTorch, Scikit-learn, OpenCV, MediaPipe, Hugging Face, LLM Integrations
+    \item \textbf{Backend \& Web:} FastAPI, Next.js, React, Node.js, Cloudflare Workers, PostgreSQL, SQLite, Socket.IO
+    \item \textbf{Tools \& Theory:} Linux, Git, Docker, Playwright, Optimization, Decision Theory (POMDP), Data Structures
+\end{itemize}
+
+% ACHIEVEMENTS
+\section{Achievements}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item \textbf{Second Place -- INNOV12 Buildathon:} Secured second place for developing the Ingredient Label Checker, an AI-powered application for ingredient and allergen analysis.
+    \item \textbf{Top 20 Projects -- Innovacion:} Selected among the top 20 projects for the independent development of the AI-Based Spinal Posture Detection project.
+    \item \textbf{20th Rank -- CSE Department:} Secured 20th position in the Computer Science and Engineering department during my first year.
+\end{itemize}
+
+% CERTIFICATIONS
+\section{Certifications}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item \textbf{NPTEL: The Joy of Computing using Python (IIT Ropar)} -- Elite + Gold, 96\% (Top 5\% Topper) \hfill \textit{Jan -- Apr 2026}
+    \item \textbf{NPTEL: Data Structures and Algorithms Design (IIT Kanpur)} -- Elite + Silver, 79\% \hfill \textit{Jul -- Dec 2026}
+\end{itemize}
+
+\end{document}
