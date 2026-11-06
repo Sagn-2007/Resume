@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sagnik Datta Bhowmick | Resume</title>
+    <meta name="description" content="Resume of Sagnik Datta Bhowmick - Computer Science and Engineering student.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", sans-serif;
+            background: #09090b;
+            color: #fafafa;
+            min-height: 100vh;
+        }
+
+        header {
+            height: 76px;
+            padding: 0 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #27272a;
+            background: #09090b;
+        }
+
+        .brand {
+            font-size: 17px;
+            font-weight: 650;
+            letter-spacing: -0.4px;
+        }
+
+        .brand span {
+            color: #a1a1aa;
+            font-weight: 400;
+        }
+
+        .download {
+            text-decoration: none;
+            background: #fafafa;
+            color: #09090b;
+            padding: 11px 19px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .download:hover {
+            background: #d4d4d8;
+            transform: translateY(-1px);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        .heading {
+            margin-bottom: 25px;
+        }
+
+        .heading h1 {
+            font-size: clamp(25px, 4vw, 36px);
+            letter-spacing: -1.2px;
+            margin-bottom: 9px;
+        }
+
+        .heading p {
+            color: #a1a1aa;
+            font-size: 14px;
+        }
+
+        .viewer {
+            width: 100%;
+            height: 850px;
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .viewer iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 28px 15px;
+            color: #71717a;
+            font-size: 12px;
+            border-top: 1px solid #27272a;
+        }
+
+        footer a {
+            color: #a1a1aa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 0 18px;
+                height: 65px;
+            }
+
+            .brand {
+                font-size: 14px;
+            }
+
+            .download {
+                padding: 9px 12px;
+                font-size: 12px;
+            }
+
+            main {
+                padding: 32px 14px;
+            }
+
+            .viewer {
+                height: 75vh;
+                min-height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            Sagnik Datta Bhowmick
+            <span>/ Resume</span>
+        </div>
+
+        <a class="download" href="./sagnikresume.pdf" download>
+            ↓ Download Resume
+        </a>
+    </header>
+
+    <main>
+        <section class="heading">
+            <h1>My Resume</h1>
+            <p>
+                Computer Science & Engineering
+                · Academic and Professional Profile
+            </p>
+        </section>
+
+        <section class="viewer">
+            <iframe
+                src="./sagnikresume.pdf#toolbar=1&navpanes=0"
+                title="Sagnik Datta Bhowmick Resume">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Sagnik Datta Bhowmick
+        ·
+        <a href="https://github.com/Sagn-2007/Resume">
+            GitHub Repository
+        </a>
+    </footer>
+
+</body>
+</html>
