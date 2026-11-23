@@ -1,0 +1,34 @@
+name: Compile LaTeX Resume
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'resume.tex'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Tectonic
+        uses: wtfjoke/setup-tectonic@v3
+
+      - name: Compile and overwrite sagnikresume.pdf
+        run: |
+          tectonic resume.tex
+          mv resume.pdf sagnikresume.pdf
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sagnikresume.pdf
+          git diff --staged --quiet || git commit -m "chore: update sagnikresume.pdf [skip ci]"
+          git push
